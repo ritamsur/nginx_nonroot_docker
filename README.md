@@ -5,7 +5,7 @@ Test index.html file is present for testing purpose.First the image needs to be 
 Below are the steps:
 <br>
 1)docker build -t nonrooti .
-<<br>
+<br>
 Here the . denotes the Dockerfile path, if changed provide the right directory.
 The image will be build with name nonrooti, change the same if required. 
 <br>
