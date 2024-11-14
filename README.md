@@ -15,4 +15,12 @@ Expose the port that has been mentioned in the dockerfile and nginx.conf. The co
 <br> 
 Once the container is in Running state, go to browser and check the following URL: http://localhost:8080
 <br>
-Else curl can also used - curl http://localhost:8080 
+Else curl can also used - curl http://localhost:8080
+<br>
+<br>
+<br>
+<br>
+#As I am building the image from mac and if the image will be used in kubernetes. Build the image using the below command. Macbook(M1/M2/M3) is an ARM based model, hence we have to build the image fro amd64 architecture. 
+<br>
+docker buildx build --platform linux/amd64 -t nginxnonrooti:amd64 .
+<br>
